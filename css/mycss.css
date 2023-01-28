@@ -1,4 +1,4 @@
-/* 网页置灰
+/* 网页置灰*/
 html {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -9,7 +9,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
   -webkit-filter: grayscale(1);
 }
-*/
+
 
 .header .header-content {
     width: 100%
