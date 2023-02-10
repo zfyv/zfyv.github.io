@@ -19,6 +19,21 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
+    <script>
+        var themeModelId = '3';
+        if (themeModelId) {
+            localStorage.setItem('modelId', themeModelId);
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+    <script>
+        var live2dOpen = eval('true') || false;
+        if (!live2dOpen) {
+            localStorage.setItem('waifu-display', 1609323474481);
+        }
+    </script>
+  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -508,23 +523,6 @@
           <li class="post-item" data-aos="fade-left">
             
             <div class="post-img-box">
-              <a href="/2022/11/27/onelist/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/11.jpg" class="lazyload placeholder" data-srcset="/medias/11.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">11-27</span>
-              </div>
-              <a class="post-title" href="/2022/11/27/onelist/">OneList</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
               <a href="/2022/11/27/olaindex/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" src="/medias/15.jpg" class="lazyload placeholder" data-srcset="/medias/15.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
@@ -535,6 +533,23 @@
                 <span class="post-date">11-27</span>
               </div>
               <a class="post-title" href="/2022/11/27/olaindex/">OLAINDEX</a>
+            </div>
+          </li>
+        
+          
+          <li class="post-item" data-aos="fade-left">
+            
+            <div class="post-img-box">
+              <a href="/2022/11/27/onelist/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" src="/medias/11.jpg" class="lazyload placeholder" data-srcset="/medias/11.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                <span class="post-date">11-27</span>
+              </div>
+              <a class="post-title" href="/2022/11/27/onelist/">OneList</a>
             </div>
           </li>
         
@@ -1234,7 +1249,7 @@
         function doSomething() {
           that.$notify({
             title: "copy成功",
-            content: "代码已复制，请遵守相关授权协议。",
+            content: "信息已复制，请遵守相关授权协议。",
             type: 'success'
           })
         }
@@ -1285,10 +1300,8 @@
 <!-- 鼠标点击特效 -->
 <!-- 爱心点击 -->
 
-  
-    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
-    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-    <script src="/js/cursor/explosion.min.js"></script>
+   
+    <script src="/js/cursor/clicklove.js"></script> 
   
 
 

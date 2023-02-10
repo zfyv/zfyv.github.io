@@ -19,6 +19,21 @@
   <link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
   
   
+    <script>
+        var themeModelId = '3';
+        if (themeModelId) {
+            localStorage.setItem('modelId', themeModelId);
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/yuang01/live2d-widget@latest/autoload.js"></script>
+    <script>
+        var live2dOpen = eval('true') || false;
+        if (!live2dOpen) {
+            localStorage.setItem('waifu-display', 1609323474481);
+        }
+    </script>
+  
   
   
 <link rel="stylesheet" href="/css/animate.min.css">
@@ -533,20 +548,19 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/13.jpg" class="lazyload placeholder" data-srcset="/medias/13.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2022/12/02/2022-12-e-zhong-duan-he-yong-hu-guan-li/" class="post-nav-link">
+    <a href="/2022/11/30/2022-11-d-kong-zhi-tai-xi-tong-she-zhi/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">用户中心</div>
+        <div class="title-text">控制台系统设置</div>
       </div>
       
       <!-- <div class="content">
         
 [TOC]
 
-用户中心1、终端接入设置终端接入的设置关乎于终端管理的设置和用户管理设置
-1.审批接入1当使用审批接入时
+控制台系统设置1、系统参数设置1.终端接入设置接入模式建议使用审批模式或授权码、密码强度根据自己需求设置
       </div> -->
     </a>
   </div>
@@ -557,18 +571,21 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/13.jpg" class="lazyload placeholder" data-srcset="/medias/13.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/8.jpg" class="lazyload placeholder" data-srcset="/medias/8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2022/11/30/2022-11-d-kong-zhi-tai-xi-tong-she-zhi/" class="post-nav-link">
+    <a href="/2022/11/29/2022-11-b-fu-wu-qi-ji-ben-she-zhi/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">控制台系统设置</div>
+        <div class="title-text">服务器基本设置</div>
       </div>
       <!-- <div class="content">
         
 [TOC]
 
-控制台系统设置1、系统参数设置1.终端接入设置接入模式建议使用审批模式或授权码、密码强度根据自己需求设置
+服务器基本设置1、服务器防护1服务控制器》服务状态》服务器防护状态》开启
+
+
+2、数据备份1服务控制器》
       </div> -->
     </a>
   </div>
@@ -579,89 +596,6 @@
     
 
     <!-- 打赏 -->
-    
-      <div id="appDonate" class="post-donate">
-  <div id="donate_board" class="donate_bar center" ref="donate">
-    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
-  </div>
-  <transition name="fade">
-    <div 
-      class="donate-box-mask"
-      v-cloak 
-      v-show="visible"
-      @click="cancelDialogDrawer()"
-    >
-    </div>
-  </transition>
-  <transition name="bounce">
-    <div class="donate-box" v-cloak v-show="visible">
-      <div class="donate-box_close">
-        <i class="fas fa-times" aria-hidden="true" @click="cancelDialogDrawer" pointer></i>
-      </div>
-      <div class="donate-box_title">
-        <h4>
-          你的赏识是我前进的动力
-        </h4>
-      </div>
-      <div class="donate-box_tab">
-        <div class="Alipay" pointer :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
-          支付宝
-        </div>
-        <div class="WeChatpay" pointer :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
-          微信
-        </div>
-      </div>
-      <div class="donate-box_img">
-        <div class="AlipayImg" v-show="tabActive === 'Alipay'">
-          <img src="/medias/1.jpg" class="lazyload placeholder" data-srcset="/medias/1.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="支付宝打赏" />
-        </div> 
-        <div class="WeChatpayImg" v-show="tabActive === 'WeChatpay'">
-          <img src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="微信打赏" />
-        </div>
-      </div>
-    </div>
-  </transition>
-</div>
-
-<script>
-  var body = document.body || document.documentElement || window;
-  var vm = new Vue({
-    el: '#appDonate',
-    data: {
-      visible: false,
-      tabActive: 'Alipay',
-      top: 0,
-    },
-    computed: {
-    },
-    mounted() {
-    },
-    methods: {
-      showDialogDrawer() {
-        this.visible = true;
-        // 防止页面滚动，只能让弹框滚动
-        // function getScroll() {
-        //   return {
-        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
-        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-        //   };
-        // }
-        this.top = $(document).scrollTop() // or getScroll().top
-        // console.log('aa', $('.main-content'));
-        body.style.cssText = 'overflow: hidden;';
-      },
-      cancelDialogDrawer() {
-        this.visible = false;
-        body.removeAttribute('style');
-        $(document).scrollTop(this.top)
-      },
-      changeTabActive(name) {
-        this.tabActive = name;
-      }
-    },
-    created() {}
-  })
-</script>
     
 
     <!-- 分享 -->
@@ -795,9 +729,9 @@
             
 
             <div class="post-img-box">
-              <a href="/2022/11/30/2022-11-cweb-fang-wen-ping-tai/" class="post-img " style="background-size: cover; 
+              <a href="/2022/11/30/2022-11-d-kong-zhi-tai-xi-tong-she-zhi/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/13.jpg" class="lazyload placeholder" data-srcset="/medias/13.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
@@ -806,7 +740,7 @@
                   <span class="post-date">11-30</span>
                 
               </div>
-              <a class="post-title" href="/2022/11/30/2022-11-cweb-fang-wen-ping-tai/">WEB访问平台</a>
+              <a class="post-title" href="/2022/11/30/2022-11-d-kong-zhi-tai-xi-tong-she-zhi/">控制台系统设置</a>
             </div>
           </div>
         
@@ -1590,7 +1524,7 @@
         function doSomething() {
           that.$notify({
             title: "copy成功",
-            content: "代码已复制，请遵守相关授权协议。",
+            content: "信息已复制，请遵守相关授权协议。",
             type: 'success'
           })
         }
@@ -1641,10 +1575,8 @@
 <!-- 鼠标点击特效 -->
 <!-- 爱心点击 -->
 
-  
-    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
-    <script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-    <script src="/js/cursor/explosion.min.js"></script>
+   
+    <script src="/js/cursor/clicklove.js"></script> 
   
 
 

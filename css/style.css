@@ -613,7 +613,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 #l_side .side_tagcloud {
   background: #fff;
-  order: 1;
+  order: 2;
 }
 #l_side .side_tagcloud .content {
   text-align: justify;
@@ -680,7 +680,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   color: #87ceeb;
 }
 #l_side .side_archives {
-  order: 2;
+  order: 1;
   background: #fff;
 }
 #l_side .side_archives .card-archive-list {
